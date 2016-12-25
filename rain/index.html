@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/animations.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/touch.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script>
+			$(function(){
+				var oA=document.getElementById('audio');
+				$('#music').tap(function(){
+					if(oA.paused){
+						oA.play();
+						//$(this).addClass('rotate');
+						$(this).text("暂停");
+					}else{
+						oA.pause();
+						//$(this).removeClass('rotate');
+						$(this).text("播放");
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="music" class="">暂停</div>
+		<audio src="img/m1.mp3" id="audio" autoplay=""></audio>
+		<div class="page page-1-1 ">
+			<div class="wrap">
+				<img src="img/rain-1.png" class="img3 pt-page-moveFromLeft">
+				<img src="img/2015.png" class="img1 pt-page-moveFromBottom">
+				<img src="img/rain-1-1.png" class="img2 pt-page-moveFromLeft">
+				<img src="img/rain-1_03.png" class="img4 pt-page-moveFromLeft">
+				<img src="img/Rain.png" class="img5 pt-page-moveFromLeft run">
+			</div>
+		</div>
+		<div class="page page-2-1 hide">
+			<div class="wrap">
+				<img src="img/call.png" class="img1 pt-page-moveFromLeft pt-page-delay700 hide">
+				<img src="img/page-2_1.png" class="img2 pt-page-moveFromBottom ">
+			</div>
+		</div>
+		<div class="page page-3-1 hide">
+			<div class="wrap">
+				<img src="img/rain3_page_06.png" class="img7">
+				<img src="img/rain3_page_09.png" class="img8">
+				<img src="img/rain3_page_03.png" class="img9">
+				<img src="img/rarin_w.png" class="img1 pt-page-moveToBottomFade pt-page-delay700 ">
+				<img src="img/mojiao.png." class="img2 pt-page-moveFromLeftFade ">
+				<img src="img/Rain21.png." class="img3 animated bounceIn">
+			</div>
+		</div>
+		<div class="page page-4-1 hide">
+			<div class="wrap">
+				<img src="img/page4_dt.png" class="img1 animated flash">
+				<img src="img/weiyi.png" class="img2 animated bounceInDown">
+				<img src="img/de.png" class="img3">
+				<img src="img/r_4.png" class="img4 animated rubberBand pt-page-delay700">
+
+						<img class="weork_x weork1 animated fadeInLeft" src="img/shanghai.png" >
+						<img class="weork_i weork2 animated fadeInLeft" src="img/shanghai_img.png">
+						<img class="border1 bor animated fadeInLeft" src="img/kuang.png">
+
+						<img class="weork_x weork3 animated fadeInRight pt-page-delay700" src="img/wuhan.png">
+						<img class="weork_i weork4 animated fadeInRight pt-page-delay700" src="img/wuhan_img.png">
+						<img class="border2 bor animated fadeInRight pt-page-delay700" src="img/kuang.png">
+
+					<img class="weork_x weork5 animated fadeInLeft pt-page-delay1000" src="img/shengyang.png">
+					<img class="weork_i weork6 animated fadeInLeft pt-page-delay1000" src="img/shengyang_img.png">
+					<img class="border3 bor animated fadeInLeft pt-page-delay1000" src="img/kuang.png">
+
+					<img class="weork_x weork7 animated fadeInRight pt-page-delay2000" src="img/changs.png">
+					<img class="weork_i weork8 animated fadeInRight pt-page-delay2000" src="img/changs_img.png">
+					<img class="border4 bor animated fadeInRight pt-page-delay2000" src="img/kuang.png">
+
+
+			</div>
+		</div>
+	</body>
+</html>
